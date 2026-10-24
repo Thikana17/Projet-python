@@ -1,4 +1,5 @@
 from fastapi import FastAPI, HTTPException
+
 from app.conversion import celsius_fahrenheit
 
 app = FastAPI(title="Mini API")
