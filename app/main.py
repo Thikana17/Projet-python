@@ -1,5 +1,7 @@
 from fastapi import FastAPI
+
 from app.outils.texte import compter_voyelles
+
 app = FastAPI(title="Mini API")
 
 @app.get("/sante")
