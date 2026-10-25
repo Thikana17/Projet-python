@@ -1,4 +1,5 @@
 from fastapi import FastAPI, HTTPException
+
 from app.outils.texte import est_palindrome
 
 app = FastAPI(title="Mini API")
