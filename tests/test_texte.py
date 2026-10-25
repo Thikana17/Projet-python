@@ -3,6 +3,7 @@ from fastapi.testclient import TestClient
 
 from app.main import app
 from app.outils.texte import est_palindrome
+
 client = TestClient(app)
 
 def test_est_palindrome_normal():
