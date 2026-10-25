@@ -2,7 +2,7 @@ import pytest
 from fastapi.testclient import TestClient
 
 from app.main import app
-from app.outils.texte import compter_voyelles, est_palindrome
+from app.outils.texte import compter_voyelles
 
 client = TestClient(app)
 
