@@ -1,7 +1,8 @@
 import pytest
-from app.outils.texte import est_palindrome
 from fastapi.testclient import TestClient
+
 from app.main import app
+from app.outils.texte import est_palindrome
 
 client = TestClient(app)
 
