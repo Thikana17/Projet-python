@@ -1,3 +1,7 @@
 __pycache__/
 venv/
 .env
+.coverage
+.pytest_cache/
+*.pyc
+.DS_Store
