@@ -1,5 +1,6 @@
 from fastapi import FastAPI, HTTPException
 
+from app.conversion import celsius_fahrenheit
 from app.outils.math import factorielle
 from app.outils.validation import code_postal, email_valide, mdp_robuste
 
@@ -10,6 +11,10 @@ app = FastAPI(title="Mini API")
 def route_sante():
     return {"statut": "API active"}
 
+@app.get("/celsius_fahrenheit/{celsius}")
+def route_celsius_fahrenheit(celsius: float):
+    try:
+        return {"celsius": celsius, "resultat": celsius_fahrenheit(celsius)}
 
 @app.get("/factorielle/{n}")
 def route_factorielle(n: int):
